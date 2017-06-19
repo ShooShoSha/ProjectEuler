@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectEulerConsole
+﻿namespace ProjectEulerConsole
 {
+    using System;
+    using ProjectEulerLibrary;
+
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Problem.SolveProblem1());
         }
     }
 }
