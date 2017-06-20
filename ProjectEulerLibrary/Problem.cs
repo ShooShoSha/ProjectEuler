@@ -1,4 +1,7 @@
-﻿namespace ProjectEulerLibrary
+﻿using System;
+using System.Linq;
+
+namespace ProjectEulerLibrary
 {
     public static class Problem
     {
@@ -22,6 +25,17 @@
             }
 
             return sum;
+        }
+
+        public static int SolveProblem2()
+        {
+            var fib = new Fibonacci();
+
+            //return fib.Values.Where(n => n < 4000000 && n % 2 == 0).Sum();
+
+            return (from n in fib.Values
+                    where n < 4000000 && n % 2 == 0
+                    select n).Sum();
         }
     }
 }
