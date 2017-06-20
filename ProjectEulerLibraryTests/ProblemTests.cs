@@ -12,5 +12,13 @@
 
             Assert.AreEqual(23, actual);
         }
+
+        [TestMethod]
+        public void SolveProblem2Test()
+        {
+            var actual = Problem.SolveProblem2();
+
+            Assert.AreEqual(4613732, actual);
+        }
     }
 }
